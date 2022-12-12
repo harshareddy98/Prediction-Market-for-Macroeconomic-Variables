@@ -1,0 +1,27 @@
+\chapter{Results}
+
+\begin{table}[ht]
+\centering
+\caption{Result Summary}
+\label{tab2}
+\begin{tabular}{llllllll}
+ \hline
+S.No & Model & Testing RMSE\\
+\hline
+ 1. & Exponential Smoothing & 2.1616 \\
+ 2. & Auto-Regressive Moving Average & 1.9255 \\ 
+ 3. & Vector Auto-Regressive & 1.3339 \\ 
+ 4. & LSTM Model & 0.089 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+Observation:
+\begin{itemize}
+    \item In uni-variate model when we used only inflation data for prediction ARMA had better performance than Exponential Smoothing.
+    \item In multivariate model considering other feature into consideration LSTM had performed better than VAR as well as other uni-variate model.
+    \item In time series for-casting also we can't be dependent only single input we need to go with multivariate forecasting for better results considering relevant other features with target variable.
+\end{itemize}
+
+
+
